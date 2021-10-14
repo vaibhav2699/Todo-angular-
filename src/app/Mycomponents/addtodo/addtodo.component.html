@@ -1,0 +1,15 @@
+<div class="container">
+    <button class="btn-light"> + Add todo </button>
+</div>
+<form class="form-group container" (ngsubmit)="onsubmit()">
+    <div class="form-group my-3">
+      <label for="title">Todo title</label>
+      <input type="text" class="form-control" id="title" name="title" [(ngModel)]="title"> 
+    </div>
+    <div class="form-group">
+      <label for="desc">todo descritption</label>
+      <input type="text" class="form-control" id="desc" name="desc" [(ngModel)]="desc">
+      <button type="submit" (click)="onsubmit()"class="btn btn-primary my-3">Add To do</button>
+    </div>
+    
+  </form>
